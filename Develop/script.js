@@ -1,10 +1,11 @@
 // Assignment code here
 
 function generatePassword() {
-	var password = "lorem";
+	var password = "";
 	var length = window.prompt(
 		"How long would you like your password to be?\nPlease enter a number between 8 and 128."
 	);
+
 	var includeLower = window.confirm("Include LOWERCASE characters?");
 	var includeUpper = window.confirm("Include UPPERCASE characters?");
 	var includeNumber = window.confirm("Include NUMERICAL characters?");
