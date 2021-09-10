@@ -2,9 +2,18 @@
 
 function generatePassword() {
 	var password = "";
-	var length = window.prompt(
-		"How long would you like your password to be?\nPlease enter a number between 8 and 128."
-	);
+	var length = "";
+	while (!length) {
+		length = window.prompt(
+			"How long would you like your password to be?\nPlease enter a number between 8 and 128."
+		);
+		length = parseInt(length);
+		if (length < 8 || length > 128) {
+			length = "";
+		}
+	}
+
+	console.log(length);
 
 	var includeLower = window.confirm("Include LOWERCASE characters?");
 	var includeUpper = window.confirm("Include UPPERCASE characters?");
