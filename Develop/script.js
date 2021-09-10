@@ -38,10 +38,10 @@ function generatePassword() {
 	}
 
 	// Prompts for password criteria
-	var includeLower = window.confirm("Click OK to include lowercase characters in your password.\nClick Cancel to exclude them.\nExample: " +	CHAR_ARRAYS.lower.join(""));
-	var includeUpper = window.confirm("Click OK to include uppercase characters in your password.\nClick Cancel to exclude them.\nExample: " +	CHAR_ARRAYS.upper.join(""));
-	var includeNumber = window.confirm("Click OK to include numeric characters in your password.\nClick Cancel to exclude them.\nExample: " +	CHAR_ARRAYS.number.join(""));
-	var includeSpecial = window.confirm("Click OK to include special characters in your password.\nClick Cancel to exclude them.\nExample: " +	CHAR_ARRAYS.special.join(""));
+	var includeLower = window.confirm("Click OK to include lowercase characters in your password.\nClick Cancel to exclude them.\nExample: " + CHAR_ARRAYS.lower.join(""));
+	var includeUpper = window.confirm("Click OK to include uppercase characters in your password.\nClick Cancel to exclude them.\nExample: " + CHAR_ARRAYS.upper.join(""));
+	var includeNumber = window.confirm("Click OK to include numeric characters in your password.\nClick Cancel to exclude them.\nExample: " + CHAR_ARRAYS.number.join(""));
+	var includeSpecial = window.confirm("Click OK to include special characters in your password.\nClick Cancel to exclude them.\nExample: " + CHAR_ARRAYS.special.join(""));
 
 	// Distribute characters in password based on criteria
 	while (passwordLength > 0) {
