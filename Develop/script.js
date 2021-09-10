@@ -26,7 +26,7 @@ function generatePassword() {
 
 		// Get user input for length
 		passwordLength = window.prompt(
-			"How long would you like your password to be?\nPlease enter a number between " +	MIN_PWORD_LENGTH + " and " +	MAX_PWORD_LENGTH + ".");
+			"How long would you like your password to be?\nPlease enter a number between " + MIN_PWORD_LENGTH + " and " + MAX_PWORD_LENGTH + ".");
 
 		// Parse string to int
 		passwordLength = parseInt(passwordLength);
